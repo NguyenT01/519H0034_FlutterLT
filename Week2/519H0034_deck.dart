@@ -1,6 +1,7 @@
 void main() {
   var deck = Deck();
 
+  deck.shuffle();
   print(deck);
   //print(deck.cards.length);
 }
@@ -18,6 +19,11 @@ class Deck {
       }
     }
   }
+  
+  shuffle() {
+    cards.shuffle();
+  }
+
   
   String toString() {
     return cards.toString();
